@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20151005184644) do
     t.decimal  "price"
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "course_id"
   end
 

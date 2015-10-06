@@ -16,7 +16,7 @@ class DishesController < ApplicationController
 
   # GET /dishes/new
   def new
-    @dish = Dish.new
+    @dish = Dish.new(course_id: params[:course_id])
   end
 
   # GET /dishes/1/edit
@@ -71,6 +71,6 @@ class DishesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dish_params
-      params.require(:dish).permit(:price, :name, :descrition)
+      params.require(:dish).permit(:price, :name, :description, :course_id)
     end
 end
