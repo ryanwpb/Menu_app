@@ -21,7 +21,7 @@
 
       <tr>
         <td><%= dish.price %></td>
-        <td><%= dish.name %></td>
+         <td><%= link_to "#{dish.name}", edit_dish_path(dish) %></td>
         <td><%= dish.description %></td>
         <td><%= link_to 'Show', dish %></td>
         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
